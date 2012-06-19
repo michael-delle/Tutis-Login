@@ -1,0 +1,177 @@
+/*
+********************
+WebSite: MemberL ogin
+Name: style.css
+Type: css
+Version: 3.0
+Author: FireDart
+********************
+*/
+/*Import Reset */
+@import url("reset.css"); 
+body {
+	background: #eeeeee;
+	color: #42423d;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+/* Notice */
+.notice{background:#efefef;border:1px solid #dddddd;padding:10px 10px 10px 50px;margin:10px 0px 10px 0px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;-khtml-border-radius:3px;}
+.notice.success{background:#efefef url("../images/good.png") no-repeat scroll 10px 50%;}
+.notice.error{background:#efefef url("../images/error.png") no-repeat scroll 10px 50%;}
+.notice.info{background:#efefef url("../images/info.png") no-repeat scroll 10px 50%;}
+
+/* ClearFix */
+.group:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* Forms + Labels */
+label {
+	border-right: 0px;
+	clear: clear;
+	float: left;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+label span {
+	float: left;
+	padding: 5px 0px 5px 0px;
+}
+input, select {
+	clear: both;
+	float: left;
+}
+input {
+	margin: 0px;
+}
+input[type=submit] {
+	clear: both;
+	float: right;
+	height: 29px;
+	margin-top: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/* Login */
+#login, #logout, #register, #recover-password, #reset-password, #verification, #change-password  {
+	background: #ffffff;
+	padding: 10px 20px 20px 20px;
+	margin: 0px auto;
+	width: 300px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-o-border-radius: 0px 0px 10px 10px;
+	-khtml-border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 10px 10px;
+}
+#login form, #register form, #recover-password form, #reset-password form {
+	margin: 0px auto;
+	width: 300px;
+}
+#login form label span, #register form label span, #recover-password form label span, #reset-password form label span {
+	width: 100%;
+}
+#login form input, #register form input, #recover-password form input, #reset-password form input, #change-password form input {
+	width: 290px;
+}
+#login form input[type=submit], #register form input[type=submit], #recover-password form input[type=submit], #reset-password form input[type=submit], #change-password form input[type=submit] {
+	width: 300px;
+}
+#login form p.remember_me {
+	float: left;
+	line-height: 1em;
+	padding: 10px 0px 0px 0px;
+}
+#login form p.remember_me input[type=checkbox] {
+	float: left;
+	margin: 0px 5px 0px 0px;
+	width: 15px;
+}
+
+#register form label #captcha {
+	width: 300px;
+}
+#register form label #captcha img {
+	float: left;
+}
+#register form label #captcha input{
+	float: right;
+	width: 115px;
+}
+.options {
+	padding: 10px 0px 0px 0px;
+	text-align: center;
+}
+.options a {
+	text-decoration: none;
+}
+
+
+/* Layout */
+#wrapper {
+	margin: 0px auto;
+	width: 960px;
+}
+#header {
+	background: #ffffff;
+	font-size: 16px;
+	padding: 10px 20px 20px 20px;
+	margin: 0px 0px 10px 0px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-o-border-radius: 0px 0px 10px 10px;
+	-khtml-border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 10px 10px;
+}
+#header #member_name {
+	float: left;
+	line-height: 2em;
+}
+#header #member_message {
+	color: #cccccc;
+	display: block;
+	font-size: 13px;
+	font-style: italic;
+	line-height: .1em;
+}
+#header a#member_logout, #header a#change_password {
+	background: #194160;
+	color: #ffffff;
+	float: right;
+	text-decoration: none;
+	padding: 8px;
+	margin-left: 10px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+}
+#body {
+	background: #ffffff;
+	padding: 20px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+	#wrapper {
+		width: 90%;
+	}
+}

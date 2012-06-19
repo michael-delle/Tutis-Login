@@ -1,0 +1,27 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,input,textarea,table,caption,tbody,tfoot,thead,tr,th,td {border: none;outline: none;font-weight: inherit;font-style: inherit;font-size: 100%;font-family: inherit;vertical-align: baseline;margin: 0px;;padding: 0px;}
+html {overflow-y: scroll;}
+a img {border: 0px;}
+hr {height: 0px;clear: both;border: solid #cccccc;border-width: 1px 0 0}
+a:link,a:visited {color: #104e8b;text-decoration: underline;}
+a:hover,a:active {color: #104e8b;text-decoration: none;outline: none;}
+h1,h2,h3,h4,h5,h6 {color: #104e8b;margin-bottom: 10px}
+h1 {border-bottom: 1px solid #cccccc;font-size: 22px;font-weight: bolder;line-height: 1.5em;}
+h2 {font-size: 20px}
+h3 {font-size: 18px}
+h4 {font-size: 16px}
+h5 {font-size: 14px}
+h6 {font-size: 12px}
+p {color:#333;font-size:12px;}
+address {font-style: italic}
+label, input, textarea, select {float: left;clear: both;}
+input, select {width: 162px;}
+input, textarea, select {background: #ffffff;background: url("../images/input.png");background: -webkit-gradient(linear, left top, left 25, from(#ffffff), to(#efefef));background: -moz-linear-gradient(center top , #ffffff, #efefef) repeat scroll 0 0;border: solid 1px #cdcdcd;font: normal 13px/100% inherit;margin: 0px 0px 10px 0px;-webkit-border-radius:3px;-moz-border-radius:3px;-khtml-border-radius:5px;-o-border-radius:5px;border-radius:5px;padding: 5px}
+input[type=submit] {clear: none;padding: 2px 5px 5px 5px;width: auto;}
+select {width:  174px;}
+input:hover, textarea:hover, select:hover, input:focus, textarea:focus, select:focus {border-color:#c9c9c9-webkit-box-shadow: rgba(0,0,0,0.15) 0 0 4px;-moz-box-shadow: rgba(0,0,0,0.15) 0 0 4px;box-shadow: rgba(0,0,0,0.15) 0 0 4px;}
+ul, ol {list-style: none}
+li, dd {margin-left: 20px}
+:focus {outline: 0;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '"';font-size: 20px;font-style: italic;padding: 5px;vertical-align: top;}
+.clearer {clear:both}
