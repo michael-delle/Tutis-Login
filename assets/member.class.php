@@ -643,16 +643,16 @@ class member {
 </form>
 		';
 		if(isset($_POST['recover'])) {
-			$database->query('SELECT username FROM users WHERE email = :email', array(':email' => $_POST['email']));
+			$database->query('SELECT username, email FROM users WHERE email = :email', array(':email' => $_POST['email']));
 			/* Check if user exist */
 			if($database->count() >= '1') {
 				/* Get the users info */
 				$user = $database->statement->fetch(PDO::FETCH_OBJ);
 				/* Create a random password */
 				$chars = '1234567890AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz!@#$%^&*';
-				$string = "";
+				$temp_password = "";
 				for($i = 0; $i < 10; $i++) {
-					$string .= ($i%2) ? $chars[mt_rand(10, 23)] : $chars[mt_rand(0, 18)];
+					$temp_password .= ($i%2) ? $chars[mt_rand(10, 23)] : $chars[mt_rand(0, 18)];
 				}
 				/* Can we send a user an E-Mail? */
 				if(function_exists('mail') && $this->email_master != null) {
