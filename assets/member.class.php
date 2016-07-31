@@ -209,7 +209,7 @@ class member {
 			$status = true;
 			
 			/* Check if user needs account reset */
-			$database->query('SELECT reset FROM users WHERE id = :id', array(':id' => $_SESSION['member_id']));
+			$database->query('SELECT id, hash FROM agents_logged WHERE id = :id AND hash = :hash' , array(':id' => $_COOKIE['remember_me_id'],':hash' => $_COOKIE['remember_me_hash']));
 			$user = $database->statement->fetch(PDO::FETCH_OBJ);
 			/* Is a password Reset needed? */
 			if($user->reset == 1) {
@@ -330,7 +330,7 @@ class member {
 			case 2:
 				$action = "Recover Password";
 				break;
-			case 2:
+			case 3:
 				$action = "Reset Password";
 				break;
 		}
